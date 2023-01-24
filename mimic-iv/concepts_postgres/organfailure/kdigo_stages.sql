@@ -64,7 +64,7 @@ crrt_stg AS (
 	CASE
     	WHEN charttime IS NOT NULL THEN 3
         ELSE NULL END AS aki_stage_crrt
-FROM `physionet-data.mimic_derived.crrt`
+FROM mimiciv_derived.crrt
 )
 -- get all charttimes documented
 , tm_stg AS
